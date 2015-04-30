@@ -28,12 +28,6 @@ Roles* Roles::getInstance()
 }
 
 
-
-
-
-
-
-
 bool Roles::init()
 {
 	std::string filePath = FileUtils::getInstance()->fullPathForFilename(RolesFileName);
@@ -46,10 +40,10 @@ bool Roles::init()
 	FileUtils::getInstance()->setPopupNotify(true);
 	pDoc.Parse(data.c_str());
 	XMLElement * pEle = pDoc.RootElement();
-	auto child = pEle->FirstChildElement();
+	//auto child = pEle->FirstChildElement();
 
 
-	for (child = pEle->FirstChildElement(); child != nullptr; child = child->NextSiblingElement())
+	for (auto child = pEle->FirstChildElement(); child != nullptr; child = child->NextSiblingElement())
 	{
 
 		Role role;

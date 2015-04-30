@@ -2,6 +2,7 @@
 #include "cocostudio/CocoStudio.h"
 #include "ui/CocosGUI.h"
 #include "Data/Roles.h"
+#include "Data/Levels.h"
 
 USING_NS_CC;
 
@@ -41,6 +42,15 @@ bool HelloWorld::init()
 	for (auto role : Roles::getInstance()->roles)
 	{
 		CCLOG("wight, %d, height, %d, type, %d, image_name, %s, id, %d", role.width, role.height, role.type, role.imageName.getCString(), role.id);
+	}
+
+	for (auto level : Levels::getInstance()->levels)
+	{
+		for (auto role : level)
+		{
+			CCLOG("row %d, col %d, id %d", role.row, role.col, role.roleId);
+		}
+		CCLOG("---------------------------------------");
 	}
 
 	

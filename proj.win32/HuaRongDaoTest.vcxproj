@@ -143,9 +143,10 @@ xcopy "$(ProjectDir)..\Resources" "$(OutDir)" /D /E /I /F /Y
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\Classes\AppDelegate.h" />
+    <ClInclude Include="..\Classes\Data\Levels.h" />
     <ClInclude Include="..\Classes\Data\Roles.h" />
+    <ClInclude Include="..\Classes\GameLayer.h" />
     <ClInclude Include="..\Classes\HelloWorldScene.h" />
-    <ClInclude Include="..\Classes\Levels.h" />
     <ClInclude Include="main.h" />
   </ItemGroup>
   <ItemGroup>

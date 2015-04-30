@@ -44,8 +44,11 @@
     <ClInclude Include="..\Classes\Data\Roles.h">
       <Filter>src\Data</Filter>
     </ClInclude>
-    <ClInclude Include="..\Classes\Levels.h">
+    <ClInclude Include="..\Classes\Data\Levels.h">
       <Filter>src\Data</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GameLayer.h">
+      <Filter>src</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

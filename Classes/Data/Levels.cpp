@@ -18,7 +18,7 @@ Levels* Levels::getInstance()
 {
 	if (s_levels == nullptr)
 	{
-		s_levels == new Levels();
+		s_levels = new Levels();
 		s_levels->init();
 	}
 
@@ -39,6 +39,18 @@ bool Levels::init()
 	XMLElement * pEle = pDoc.RootElement();
 	auto child = pEle->FirstChildElement();
 
-
-
+	for (auto child = pEle->FirstChildElement(); child != nullptr; child = child->NextSiblingElement())
+	{
+		std::vector<RowColRole> level;
+		for (auto role = child->FirstChildElement(); role != nullptr; role = role->NextSiblingElement())
+		{
+			RowColRole rowColRol;
+			rowColRol.row = atoi(role->Attribute("row"));
+			rowColRol.col = atoi(role->Attribute("col"));
+			rowColRol.roleId = atoi(role->Attribute("id"));
+			level.push_back(rowColRol);
+		}
+		levels.push_back(level);
+	}
+	return true;
 }

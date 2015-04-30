@@ -1,22 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<levels
->
-	<level
-		id = "0"
-		role_id = "0,11,11,11,11,6,7,3,4,5"
-		row = "3,4,3,3,2,0,1,0,1,2"
-		col = "0,2,2,3,1,1,0,2,2,2"
-	></level>
-	<level
-		id = "1"
-		role_id = "0,11,11,11,11,6,7,3,4,5"
-		row = "3,4,3,3,2,2,1,0,1,0"
-		col = "0,2,2,3,1,2,2,2,0,1"
-	></level>
-	<level
-		id = "2"
-		role_id = "1,1,1"
-		row = "1,1,1"
-		col = "1,1,1"
-	></level>
+<levels>
+	<level>
+		<role id="0" row="3" col="0"></role>
+		<role id="11" row="4" col="2"></role>
+		<role id="11" row="3" col="2"></role>
+		<role id="11" row="3" col="3"></role>
+		<role id="11" row="2" col="1"></role>
+		<role id="6" row="0" col="1"></role>
+		<role id="7" row="1" col="0"></role>
+		<role id="3" row="0" col="2"></role>
+		<role id="4" row="1" col="2"></role>
+		<role id="5" row="2" col="2"></role>
+	</level>
+	<level><role id="0" row="3" col="0"></role><role col="2" row="4" id="11"></role><role row="3" col="2" id="11"></role><role row="3" col="3" id="11"></role><role col="1" id="11" row="2"></role><role col="2" id="6" row="2"></role><role col="2" id="7" row="1"></role><role col="2" id="3" row="0"></role><role col="0" id="4" row="1"></role><role col="1" id="5" row="0"></role></level>
 </levels>
