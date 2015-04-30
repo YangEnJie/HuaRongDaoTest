@@ -10,7 +10,7 @@
     <Filter Include="src">
       <UniqueIdentifier>{bb6c862e-70e9-49d9-81b7-3829a6f50471}</UniqueIdentifier>
     </Filter>
-    <Filter Include="win32\Data">
+    <Filter Include="src\Data">
       <UniqueIdentifier>{6c64b22d-3f4e-4af6-b402-e0546cd52a2a}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
@@ -24,6 +24,12 @@
     <ClCompile Include="..\Classes\HelloWorldScene.cpp">
       <Filter>src</Filter>
     </ClCompile>
+    <ClCompile Include="..\Classes\Data\Roles.cpp">
+      <Filter>src\Data</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Data\Levels.cpp">
+      <Filter>src\Data</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="main.h">
@@ -35,8 +41,11 @@
     <ClInclude Include="..\Classes\HelloWorldScene.h">
       <Filter>src</Filter>
     </ClInclude>
-    <ClInclude Include="..\Classes\Level.h">
-      <Filter>win32\Data</Filter>
+    <ClInclude Include="..\Classes\Data\Roles.h">
+      <Filter>src\Data</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Levels.h">
+      <Filter>src\Data</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

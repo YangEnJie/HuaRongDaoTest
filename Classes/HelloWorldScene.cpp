@@ -1,6 +1,7 @@
 #include "HelloWorldScene.h"
 #include "cocostudio/CocoStudio.h"
 #include "ui/CocosGUI.h"
+#include "Data/Roles.h"
 
 USING_NS_CC;
 
@@ -34,6 +35,15 @@ bool HelloWorld::init()
     auto rootNode = CSLoader::createNode("MainScene.csb");
 
     addChild(rootNode);
+
+	//auto role =  Roles::getInstance()->getRoleById(0);
+
+	for (auto role : Roles::getInstance()->roles)
+	{
+		CCLOG("wight, %d, height, %d, type, %d, image_name, %s, id, %d", role.width, role.height, role.type, role.imageName.getCString(), role.id);
+	}
+
+	
 
     return true;
 }
